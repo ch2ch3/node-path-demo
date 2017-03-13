@@ -1,4 +1,5 @@
 const assert = require('assert');
+const noop = require('lodash.noop');
 
 const foo = require('lib/foo');
 
