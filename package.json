@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "scripts": {
     "compile:browserify": "NODE_PATH=$(pwd)/src && browserify src/index.js -o dist/browserify.bundle.js",
-    "compile:webpack": "NODE_PATH=$(pwd)/src && webpack src/index.js dist/webpack.bundle.js"
+    "compile:webpack": "NODE_PATH=$(pwd)/src && webpack src/index.js dist/webpack.bundle.js",
+    "test": "NODE_PATH=$(pwd)/src && mocha --recursive"
   },
   "keywords": [],
   "author": "ch2ch3",
   "license": "ISC",
   "devDependencies": {
     "browserify": "14.1.0",
+    "mocha": "3.2.0",
     "webpack": "2.2.1"
   }
 }
