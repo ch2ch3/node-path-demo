@@ -1,0 +1,15 @@
+{
+  "name": "node-path-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "compile:browserify": "NODE_PATH=$(pwd)/src && browserify src/index.js -o dist/browserify.bundle.js",
+    "compile:webpack": "NODE_PATH=$(pwd)/src && webpack src/index.js dist/webpack.bundle.js"
+  },
+  "keywords": [],
+  "author": "ch2ch3",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "14.1.0",
+    "webpack": "2.2.1"
+  }
+}
